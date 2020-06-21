@@ -9,8 +9,8 @@
 		<div class="card card-body">
 			<h5>Customer:</h5>
 			<hr>
-			<a class="btn btn-outline-info  btn-sm btn-block" href="">Update Customer</a>
-			<a class="btn btn-outline-info  btn-sm btn-block" href="#">Place Order</a>
+			<a class="btn btn-outline-info  btn-sm btn-block" href="{% url 'update_order' customer.id %}">Update Customer</a>
+			<a class="btn btn-outline-info  btn-sm btn-block" href="{% url 'create_order' customer.id %}">Create Order</a>
 
 		</div>
 	</div>
@@ -28,7 +28,7 @@
 		<div class="card card-body">
 			<h5>Total Orders</h5>
 			<hr>
-			<h1 style="text-align: center;padding: 10px">{{order_count}}</h1>
+			<h1 style="text-align: center;padding: 10px">{{orders_count}}</h1>
 		</div>
 	</div>
 </div>
